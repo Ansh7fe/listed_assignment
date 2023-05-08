@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@200;400;500;700&family=Smooch+Sans:wght@300;500&display=swap');
+
+.dashboard_container {
+	font-family: 'Poppins', sans-serif;
+	display: grid;
+	grid-template-columns: 23% 77%;
+	background: #F5F5F5;
+}
+
+.sidebar {
+	background: #000000;
+	border-radius: 30px;
+	margin: 40px;
+	/* width: 10%; */
+	color: white;
+	padding: 50px;
+}
+
+.companyName {
+	font-weight: 700;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.sidebar_itemsList {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+.sidebar_item {
+	display: flex;
+	align-items: center;
+}
+
+.sidebar_itemName {
+	margin-left: 20px;
+	margin: 20px;
+}
+
+.sidebar_bottom {
+	display: flex;
+	font-weight: 400;
+	font-size: 14px;
+	flex-direction: column;
+}
+
+.sidebar_bottomLink {
+	margin-bottom: 20px;
+}
+
+.content_container {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.navbar_utility {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 40%;
+}
+
+.profile_image {
+	border-radius: 50%;
+}
+
+.searchbar {
+	display: flex;
+	align-items: center;
+	background: #FFFFFF;
+	border-radius: 10px;
+}
+
+.cards_container {
+
+	display: flex;
+	justify-content: space-between;
+	padding-right: 40px;
+}
+
+.card {
+	width: 18%;
+	padding: 25px;
+	border-radius: 20px;
+}
+
+.cardLogo {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.cardContent_header {
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 4px;
+}
+
+.cardContent_value {
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.chart_container {
+	background: #FFFFFF;
+	border-radius: 20px;
+	margin-top: 40px;
+	margin-right: 40px;
+	padding: 30px 0;
+}
+
+.chart_header {
+	font-weight: 700;
+	font-size: 18px;
+	margin: 0 30px;
+}
+
+.chart_datePicker {
+	padding: 0 30px;
+	margin-top: 5px;
+	font-weight: 400;
+	font-size: 14px;
+	color: #858585;
+}
+
+.chart {
+	margin-top: 40px;
+}
+
+.dashboard_bottom {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-right: 40px;
+	padding-bottom: 40px;
+}
+
+.piechart_card {
+	background: #FFFFFF;
+	padding: 0 40px;
+	border-radius: 20px;
+}
+
+.piechart_content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.pieCardHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.colors {
+	height: 11px;
+	width: 11px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.piecard_heading {
+	display: flex;
+	align-items: center;
+}
+
+.dashboardBottom_cards {
+	background: #FFFFFF;
+	width: 48%;
+	border-radius: 20px;
+	height: 256px;
+
+}
+
+.schedule_card {
+	padding: 40px;
+}
+
+.cardHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+
+.fontBold {
+	font-weight: 700;
+	font-size: 14px;
+	color: #666666;
+}
+
+.fontLight {
+	font-weight: 400;
+	font-size: 12px;
+	color: #999999;
+}
+
+.meeting1 {
+	margin-bottom: 15px;
+	border-left: 6px solid #9BDD7C;
+	padding: 0 15px;
+}
+
+.meeting2 {
+	border-left: 6px solid #6972C3;
+	padding: 0 15px;
+}

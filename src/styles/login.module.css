@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@200;400;500;700&family=Smooch+Sans:wght@300;500&display=swap');
+
+.container {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0%;
+	display: flex;
+}
+
+.left_half {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+	background-color: black;
+	width: 40%;
+}
+
+.heading {
+	font-size: 52px;
+	color: white;
+}
+
+.right_half {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #F5F5F5;
+	width: 70%;
+}
+
+.form_container {
+	width: 45%;
+}
+
+.bold_text {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.btn_container {
+	margin-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn {
+	background-color: white;
+	font-family: 'Poppins', sans-serif;
+	width: 200px;
+	height: 30px;
+	padding: 5px;
+	align-items: center;
+	justify-content: space-evenly;
+	display: flex;
+	border: none;
+	border-radius: 10px;
+	color: #858585;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.form_card {
+	margin-top: 25px;
+	border-radius: 20px;
+	background-color: white;
+	padding: 30px;
+}
+
+.from_inputContainer {
+	margin-bottom: 20px;
+}
+
+.inputField {
+	border: none;
+	padding: 5px;
+	width: 90%;
+	background-color: #F5F5F5;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.input_txt {
+	margin-bottom: 10px;
+}
+
+.form_links {
+	color: #346BD5;
+	margin-bottom: 20px;
+}
+
+.register_link {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.form_btn {
+	font-family: 'Poppins', sans-serif;
+	width: 95%;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: black;
+	border: none;
+	color: white;
+	font-weight: 700;
+	font-size: 16px;
+}
