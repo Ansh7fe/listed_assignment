@@ -56,7 +56,7 @@ const Login = () => {
 							Sign in
 						</button>
 					</form>
-					<p className={styles.register_link}>Don't have an account? <span className={styles.form_links}>Register here</span></p>
+					<p className={styles.register_link}>Don&apos; t have an account?<span className={styles.form_links}>Register here</span></p>
 				</div>
 			</div>
 		</div>
