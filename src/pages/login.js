@@ -4,11 +4,19 @@ import AppleIcon from '@mui/icons-material/Apple';
 import Image from 'next/image';
 import GoogleIcon from '../assets/images/google-icon 1.png'
 import { InputBase } from '@mui/material';
-import { useSession, signIn, signOut, getSession } from "next-auth/react";
+import { signIn } from "next-auth/react";
+import { useRouter } from 'next/router';
 const Login = () => {
+	const router = useRouter()
 	const signGoogle = async () => {
 		signIn();
 	};
+	// console.log(process.env.GOOGLE_CLIENT_ID)
+	const submitHandler = (e) => {
+		e.preventDefault()
+		router.push('/dashboard')
+
+	}
 	return (
 		<div className={styles.container}>
 			<div className={styles.left_half}>
@@ -22,7 +30,7 @@ const Login = () => {
 					</div>
 					<div className={styles.btn_container}>
 						<button className={styles.btn} onClick={signGoogle} type='submit' >
-							<Image src={GoogleIcon} />
+							<Image src={GoogleIcon} alt='google' />
 							{/* <p className={styles.btn_txt}> */}
 							Sign in with Google
 							{/* </p> */}
@@ -34,7 +42,7 @@ const Login = () => {
 							{/* </p> */}
 						</button>
 					</div>
-					<form className={styles.form_card}>
+					<form className={styles.form_card} onSubmit={submitHandler}>
 						<div className={styles.from_inputContainer}>
 							<p className={styles.input_txt}>Email Address</p>
 							<InputBase type='email' className={styles.inputField} />

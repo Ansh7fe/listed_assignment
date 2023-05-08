@@ -1,15 +1,30 @@
-import React from 'react';
-import { PieChart, Pie, Sector, Cell, Legend } from 'recharts';
+import React, { useEffect, useState } from 'react';
 import styles from '../../../styles/dashboard.module.css'
-const data = [
-	{ name: 'Basics Tee', value: 55, color: '#98D89E' },
-	{ name: 'Custom Short Pants', value: 31, color: '#EE8484' },
-	{ name: 'Super Hoodies', value: 14, color: '#F7DC7D' },
-];
-
+import axios from 'axios';
 const COLORS = ['#98D89E', '#EE8484', '#F7DC7D'];
 
 function PieChartExample () {
+	const [data, setData] = useState([]);
+
+	useEffect(() => {
+		async function fetchData () {
+			const response = await axios.get('/api/piechart-api');
+			setData(response.data);
+		}
+		fetchData();
+	}, []);
+	const [recharts, setRecharts] = useState(null);
+
+	useEffect(() => {
+		import('recharts').then((recharts) => {
+			setRecharts(recharts);
+		});
+	}, []);
+	if (!recharts) {
+		return <div>Loading...</div>;
+	}
+
+	const { PieChart, Pie, Cell } = recharts;
 	return (
 		<div className={styles.piechart_card}>
 			<div className={styles.pieCardHeader}>
@@ -20,14 +35,14 @@ function PieChartExample () {
 				<PieChart width={200} height={205} style={{
 					position: 'relative',
 					top: '-25px'
-				}}>
+				}} key='pie-chart-1'>
 					<Pie
 						data={data}
 						cx={100}
 						cy={120}
 						innerRadius={0}
 						outerRadius={80}
-
+						key='pie123'
 						fill="#8884d8"
 						dataKey="value"
 					>
@@ -37,9 +52,9 @@ function PieChartExample () {
 					</Pie>
 				</PieChart>
 				<div>
-					{data.map((item) =>
+					{data.map((item, index) =>
 					(
-						<div key={item.value}>
+						<div key={index}>
 							<div className={styles.piecard_heading}>
 								<div className={styles.colors} style={{ background: item.color }}>
 								</div>

@@ -4,7 +4,7 @@ import styles from '../../../styles/dashboard.module.css'
 const SidebarItems = ({ name, logo }) => {
     return (
         <div className={styles.sidebar_item}>
-            <Image src={logo} />
+            <Image src={logo} alt={name} />
             <p className={styles.sidebar_itemName}>{name}</p>
         </div>
     )

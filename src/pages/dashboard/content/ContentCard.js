@@ -5,7 +5,7 @@ const ContentCard = ({ image, cardHeader, cardContent, bColor }) => {
 	return (
 		<div className={styles.card} style={{ backgroundColor: bColor }}>
 			<div className={styles.cardLogo}>
-				<Image src={image} />
+				<Image src={image} alt={cardContent} />
 			</div>
 			<div className={styles.cardContent_container}>
 				<p className={styles.cardContent_header}>{cardHeader}</p>

@@ -19,8 +19,8 @@ const ContentNavbar = () => {
 						marginRight: '10px'
 					}} />
 				</div>
-				<Image src={BellIcon} />
-				<Image src={ProfileIcon} className={styles.profile_image} />
+				<Image src={BellIcon} alt='bell' />
+				<Image src={ProfileIcon} className={styles.profile_image} alt='pro' />
 			</div>
 
 		</div>

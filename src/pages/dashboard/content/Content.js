@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from '../../../styles/dashboard.module.css'
 import ContentCard from './ContentCard';
 import RevenueIcon from '../../../assets/images/card1.png'
@@ -9,6 +9,7 @@ import LineChartExample from './LineChart';
 import PieChartExample from './Piechart';
 import Schedule from './Schedule';
 import ContentNavbar from './ContentNavbar';
+import axios from 'axios'
 const Content = () => {
 	return (
 		<div>
